@@ -1,0 +1,33 @@
+# UK Unemployment Trends Analysis
+
+## 1. Introduction
+- What this project is about
+- Why unemployment trends matter
+- Dataset source
+
+## 2. Import Libraries
+(code cell with imports — already done ✅)
+
+## 3. Load the Dataset
+- Load CSV/Excel into pandas
+- Preview with `.head()` and `.info()`
+
+## 4. Data Cleaning
+- Handle missing values
+- Fix column names
+- Convert date columns to datetime
+
+## 5. Exploratory Data Analysis (EDA)
+- Summary stats
+- Line chart: Unemployment % over time
+- Bar chart: Male vs Female (if available)
+- Regional breakdown (England, Scotland, etc.)
+
+## 6. Key Insights
+- Spikes during 2008 financial crisis
+- Spikes during COVID-19
+- Trends over last decade
+
+## 7. Conclusion
+- Wrap up findings
+- Possible next steps

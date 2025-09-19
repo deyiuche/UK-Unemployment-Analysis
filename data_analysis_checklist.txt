@@ -1,0 +1,53 @@
+Data Analysis Checklist (Step by Step)
+
+1. Define Your Goal
+- What question do I want to answer? (e.g., "How did unemployment change over time?")
+- What output do I expect? (a trend line, summary statistics, dashboard, etc.)
+
+2. Load the Data
+- Load into a DataFrame (pd.read_csv, pd.read_excel, etc.)
+- Save a copy of the original (don’t overwrite it yet).
+
+3. Initial Exploration
+- Look at the first few rows: df.head()
+- Column names: df.columns
+- Data types: df.info()
+- Quick stats: df.describe(include="all")
+- Count missing values: df.isna().sum()
+
+4. Identify Problems
+- Do I see metadata rows that don’t belong?
+- Are there messy column names?
+- Are numeric values stored as text (e.g., "4.3 %")?
+- Are dates stored as strings?
+- Are there inconsistent formats (e.g., Q1, Quarter 1, 2020 JAN)?
+- Any missing, duplicated, or irrelevant data?
+
+5. Clean the Data
+- Drop irrelevant rows/columns → drop(), iloc[]
+- Rename columns → rename()
+- Convert text to numbers → pd.to_numeric()
+- Convert text to dates → pd.to_datetime()
+- Handle missing values (dropna(), fillna())
+
+6. Transform the Data (if needed)
+- Filter subsets (e.g., only monthly data)
+- Create new features (e.g., rolling averages, % change)
+- Aggregate (e.g., yearly averages)
+- Reshape (e.g., pivot tables)
+
+7. Analyze & Visualize
+- Line charts for trends
+- Bar charts for comparisons
+- Scatter plots for relationships
+- Summary stats (mean, median, std)
+
+8. Interpret Results
+- What story does the data tell?
+- Can I link patterns to real-world events?
+  (e.g., unemployment spike in 2008 = financial crisis, 2020 = COVID)
+
+9. Communicate
+- Present clear visuals
+- Use concise text (what, so what, now what)
+- Save/export notebook, plots, or dashboard
